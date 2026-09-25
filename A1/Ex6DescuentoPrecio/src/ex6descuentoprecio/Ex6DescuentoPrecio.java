@@ -1,0 +1,46 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package ex6descuentoprecio;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author mabardaji
+ */
+public class Ex6DescuentoPrecio {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Scanner teclado = new Scanner(System.in);
+         
+         double preu_total, descompte, preu_descompte, preu_final;
+         
+        // 2. Mostrar “¿Cuál es el precio total?
+        System.out.println("Cual es el precio total?");
+        
+        // 3. Esperar preu_total
+        preu_total = teclado.nextDouble();
+        
+        // 4. Mostrar “¿Cuál es el descuento (%)?
+        System.out.println("Cual es el descuento (%)?");
+
+        // 5. Esperar descompte
+        descompte = teclado.nextDouble();
+
+        // 6. Calcular preu_descompte = preu_total * descompte / 100
+        preu_descompte = preu_total * descompte / 100;
+
+        // 7. Calcular preu_final = preu_total - preu_descompte
+        preu_final = preu_total - preu_descompte;
+
+        // 8. Mostrar “El coste del producto es ” + preu_final
+
+        System.out.println("El coste del producto es " + preu_final);    
+    }
+    
+}
