@@ -46,9 +46,9 @@ public class Ex8CreditSaldoMoneder {
         else
         {
             missatge = "Hi ha algun parametre no acceptable"
-                    + "estat llibre" + estatLlibre
-                    + "saldo " + creditsActuals
-                    + "preu del llibre " + preuLlibre;
+                    + "\n estat llibre" + estatLlibre
+                    + "\n saldo " + creditsActuals
+                    + "\n preu del llibre " + preuLlibre;
         }
         
         System.out.println(missatge);
