@@ -17,13 +17,28 @@ public class Ex10Notas10 {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int nota;
-        
-        do{
+        int nota,cont10=0;
+        boolean nota10=false;
+        do{//no hay contador, tampoco acumulo
             System.out.print("pon una nota del 0 al 10 (-1 para terminar): ");
             nota = sc.nextInt();
-            
-        }while(nota!=-1);
+            if (nota==10)
+            {
+                nota10 = true; //flag
+                cont10++; //flag y de contador
+            }
+        }while(nota!=-1); //lo contrario de la opcion salir (nota==-1)
+        
+        if (nota10)
+        {
+            System.out.println("Has sacado algun 10");
+        }
+        
+        if (cont10>0)
+        {
+            System.out.println("Has sacado algun 10");
+        }
+        
     }
     
 }
