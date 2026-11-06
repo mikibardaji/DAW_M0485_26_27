@@ -5,7 +5,6 @@
 package ex4reforcedad;
 
 import java.time.LocalDateTime;
-import java.util.Scanner;
 
 /**
  *
@@ -20,9 +19,8 @@ public class Ex4ReforcEdad {
         int edad;
         LocalDateTime hoy = LocalDateTime.now();
         int anyo_actual = hoy.getYear();
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Introduce la edad que tienes: ");
-        edad = scan.nextInt();
+        
+        edad = LibreriasComunes.pedirNumeroUsuario("Introduce la edad que tienes: ");
         while(edad>0)
         {
             System.out.println("Al any " + anyo_actual + " tens " + edad + " anys.");
