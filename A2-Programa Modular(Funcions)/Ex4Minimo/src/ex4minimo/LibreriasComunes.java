@@ -24,16 +24,16 @@ public class LibreriasComunes {
        boolean numIncorr=false;
        
        do{
-        try{
-            System.out.print(frase);
-            num=sc.nextInt();
-            numIncorr=true;
-            sc.nextLine();
-        } catch(InputMismatchException ex){
-            System.out.println("No has puesto un numero");
-            numIncorr=false;
-            sc.nextLine();
-        }
+            try{
+                System.out.print(frase);
+                num=sc.nextInt();
+                numIncorr=true;
+                sc.nextLine();
+            } catch(InputMismatchException ex){
+                System.out.println("No has puesto un numero");
+                numIncorr=false;
+                sc.nextLine();
+            }
        }while(numIncorr==false);
        
        
